@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CL:wght@100..400&display=swap');
+
+.menu{
+    background-color: #83ec27 ;
+    text-align: center;
+}
+a:link{
+    color: #d8ffc2;
+    text-decoration: none;
+}
+    a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+    a:active{
+        background-color: #c6ffa9;
+        text-decoration: none;
+}
+    a:hover{
+color: #62ca06;
+text-decoration: none;
+}
+
+.letraDeMao{
+    color:#000000;
+    text-shadow:#83ec27 3px 3px 0.3rem;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 150%;
+}
+
+.logo {
+    background: left/ cover url('/img/husky.png');
+    display: flex; 
+    height: 365px;
+    justify-content: center;
+    font-size: 30px;
+    color: #9b8888;
+   text-shadow: #000000 2px 2px 0.2rem;
+   margin-bottom: 30px;
+   padding-top: 0px;
+}
+
+.fotosP{
+    display: flex; 
+    height: 79px;
+    font-size: 30px;
+}
+
+.fotoD{
+    right: auto;
+}
+
+    body{
+        background-color: #c7f7c5;
+        font-family: 'Playfair Display';
+        height: 900vh;
+    }
+
+nav{
+    background-color: #5edf08;
+    padding: 10px 0;
+    height: 45px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li{
+   position: relative; 
+   margin: 0 15px;
+}
+nav ul li a{
+    color:#c6ffa9;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+nav ul li a:hover{
+    color: #217d15;
+}
+
+nav ul li.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #1eff01;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li{
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover{
+    background-color: #77ff00;
+}
+
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+
+/* Estilização do conteiner do slide */  
+.slider{  
+    width: 100%;  /*o slide ocupa 100% da largura */  
+    max-width: 900px;  /* limite de largura para o slide */  
+    margin: 0 auto; /*centraliza o slide horizontalmente*/  
+    overflow: hidden; /*esconde o conteudo que ultrapassa os limites do conteiner*/  
+    position: relative; /*posiciona o slide de forma relativa para posicionar elementos dentro dele se necessario*/  
+}  
+
+.slides{  
+    display: flex; /*alinha os slides em linha*/  
+    width: 100%; /*largura do conteiner é 3 vezes a largura do slide para acomodar os slides*/  
+    animation: slideAnimation 15s infinite; /*aplica a animação nos slides com duração de 15 segundos*/  
+}  
+/* estilização individual de cada slide */  
+.slide{  
+    width: 100%;  
+    flex-shrink: 0; /*evita que o slide encolha o flex a alterar seu tamanho*/  
+} 
+/* definição da animação para os slides */  
+@keyframes slideAnimation {  
+    0%{ transform: translateX(0);} /*posição inicial do primeiro slide*/  
+    33%{ transform: translateX(-100%);} /*move para o segundo slide*/  
+    66%{ transform: translateX(-200%);} /*move para o 3 slide*/  
+    100%{ transform: translateX(0);} /*retorna ao primeiro slide*/  
+}  
+
+/* estilização das imagens para os slides */  
+
+.slide img{  
+    width: 100%; /*a img ocupa 100% da largura do slide*/  
+    display: block; /*remove qualquer espaço extra ao redor da img*/  
+}  
+
+/* rodapé */ 
+.rodape{ 
+    background-color:  #83ec27; 
+    color: rgb(0, 0, 0); 
+    height: auto; 
+    width: 100%; 
+    font-size: 14px; 
+    font-family: helvetica; 
+    display: inline-block; 
+} 
+
+.rodape a{ 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+} 
+
+.rodape p{ 
+   margin-bottom: 5px; 
+} 
+.rodape-div{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    width:100%; 
+    margin: auto; 
+    align-items: stretch; 
+    padding: 60px 10px 40px 10px; 
+} 
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{ 
+    display: flex; 
+    width: calc(100% / 4 - 20px); 
+    padding: 10px; 
+} 
+
+.rodape span{ 
+    font-size: 20px; 
+    color: rgb(0, 0, 0); 
+} 
+
+.rodape-direitos{ 
+    width: calc(100% - 20px); 
+    background-color: rgb(0, 0, 0); 
+    padding: 10px; 
+    margin: 0px; 
+} 
+
+/*mobile*/ 
+@media (max-width: 768px) { 
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{ 
+        width: calc(50% - 20px); 
+        padding: 10px; 
+    } 
+
+    .rodape-div{ 
+        padding: 60px 0px 40px 0px; 
+    } 
+
+} 
+
+.rodape-finalfolha{ 
+    display: inline-block; 
+} 
+
+/* Estilo para o contêiner principal */ 
+.container { 
+    display: flex; /* Define o contêiner como um flexbox */ 
+    gap: 20px; /* Espaçamento entre os cards */ 
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */ 
+} 
+/* Estilo para cada card */ 
+.card { 
+    background-color: white; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; /* Arredonda os cantos dos cards */ 
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */ 
+    flex: 1; /* Permite que os cards cresçam igualmente */ 
+    max-width: 300px; /* Define uma largura máxima para os cards */ 
+} 
+
+/* Estilo para o título dos cards */ 
+.card h2 { 
+    margin-top: 0; 
+    font-size: 1.5em; 
+    color: #333; 
+} 
+/* Estilo para o parágrafo dos cards */ 
+.card p { 
+    color: #666; 
+} 
